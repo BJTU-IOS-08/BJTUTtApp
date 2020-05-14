@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		1CA80F2AEDAEB16E4EC071EF /* Pods_DCTT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC2D79CD06F43F25725B0AC5 /* Pods_DCTT.framework */; };
+		9C36BCAB246D75C0003ABEA5 /* launchimg.png in Resources */ = {isa = PBXBuildFile; fileRef = 9C36BCAA246D75C0003ABEA5 /* launchimg.png */; };
+		9C36BCAD246D75FF003ABEA5 /* app1.png in Resources */ = {isa = PBXBuildFile; fileRef = 9C36BCAC246D75FE003ABEA5 /* app1.png */; };
 		A1026C251FDE1EAA002DE354 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1026C241FDE1EAA002DE354 /* CoreLocation.framework */; };
 		A10CB8EB1FE0FD340043391D /* TTImagePreviewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10CB8EA1FE0FD340043391D /* TTImagePreviewCell.swift */; };
 		A117530B1FC7B0DF00888516 /* AnimationContoller.m in Sources */ = {isa = PBXBuildFile; fileRef = A11753081FC7B0DF00888516 /* AnimationContoller.m */; };
@@ -231,6 +233,8 @@
 /* Begin PBXFileReference section */
 		55B69D6DCD87607BEB534DEA /* Pods-DCTT.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DCTT.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DCTT/Pods-DCTT.debug.xcconfig"; sourceTree = "<group>"; };
 		604BC239A7045558390DF0BE /* Pods-DCTT.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DCTT.release.xcconfig"; path = "Pods/Target Support Files/Pods-DCTT/Pods-DCTT.release.xcconfig"; sourceTree = "<group>"; };
+		9C36BCAA246D75C0003ABEA5 /* launchimg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = launchimg.png; path = ../../../../Downloads/launchimg.png; sourceTree = "<group>"; };
+		9C36BCAC246D75FE003ABEA5 /* app1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = app1.png; path = ../../../../Downloads/app1.png; sourceTree = "<group>"; };
 		A1026C241FDE1EAA002DE354 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		A10CB8EA1FE0FD340043391D /* TTImagePreviewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TTImagePreviewCell.swift; sourceTree = "<group>"; };
 		A11753071FC7B0DF00888516 /* AnimationContoller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnimationContoller.h; sourceTree = "<group>"; };
@@ -864,6 +868,8 @@
 		AD321F9722E99CA00053DEC4 /* app_logo */ = {
 			isa = PBXGroup;
 			children = (
+				9C36BCAA246D75C0003ABEA5 /* launchimg.png */,
+				9C36BCAC246D75FE003ABEA5 /* app1.png */,
 				AD321F9822E99D230053DEC4 /* 600x153.png */,
 				AD321FA622E9B49C0053DEC4 /* app_logo@2x.png */,
 				AD321FA522E9B49C0053DEC4 /* app_logo@3x.png */,
@@ -1033,6 +1039,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A1E61D211FCE93E30080A12D /* MePersonInfoCell.xib in Resources */,
+				9C36BCAD246D75FF003ABEA5 /* app1.png in Resources */,
 				AD21DF6620275A8B002FE181 /* TableViewCellSwitch.xib in Resources */,
 				AD6A983C201A12CB00E7C5AE /* HomeDetailFooterView.xib in Resources */,
 				AD20F3C82067DEA4003BDE17 /* MessageCell.xib in Resources */,
@@ -1085,6 +1092,7 @@
 				AD0FAFA120444C0A008A386E /* CategoryItemsCell.xib in Resources */,
 				ADC8EBEC21513C74008E5696 /* JiaoyouCell.xib in Resources */,
 				AD321F9C22E99D230053DEC4 /* 600x153.png in Resources */,
+				9C36BCAB246D75C0003ABEA5 /* launchimg.png in Resources */,
 				A148A2A81FD658180052DDF3 /* video_allshare@2x.png in Resources */,
 				A148A2A41FD6494B0052DDF3 /* publish_image@2x.png in Resources */,
 				A1CE839F1FC40D3D00DAF90F /* FriendsCollectonViewCell.xib in Resources */,
