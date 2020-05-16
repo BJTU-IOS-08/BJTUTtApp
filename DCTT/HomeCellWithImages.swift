@@ -1,10 +1,3 @@
-//
-//  HomeCellWithImages.swift
-//  DCTT
-//
-//  Created by wyg on 2017/12/18.
-//  Copyright © 2017年 Light.W. All rights reserved.
-//
 
 import UIKit
 import Kingfisher

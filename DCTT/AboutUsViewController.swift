@@ -1,10 +1,3 @@
-//
-//  AboutUsViewController.swift
-//  DCTT
-//
-//  Created by gener on 2018/9/7.
-//  Copyright © 2018年 Light.W. All rights reserved.
-//
 
 import UIKit
 
@@ -15,7 +8,7 @@ class AboutUsViewController: MeBaseTableViewController {
         super.viewDidLoad()
 
         if let info = Bundle.main.infoDictionary {
-            appversion.text = "郸城头条" + String.isNullOrEmpty(info["CFBundleShortVersionString"]) + "(\(String.isNullOrEmpty(info["CFBundleVersion"])))"
+            appversion.text = "无忧论坛" + String.isNullOrEmpty(info["CFBundleShortVersionString"]) + "(\(String.isNullOrEmpty(info["CFBundleVersion"])))"
         }
         
     }

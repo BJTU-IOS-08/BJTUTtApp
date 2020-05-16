@@ -1,10 +1,3 @@
-//
-//  MeViewController.swift
-//  DCTT
-//
-//  Created by wyg on 2017/11/11.
-//  Copyright © 2017年 Light.W. All rights reserved.
-//
 
 import UIKit
 
@@ -14,20 +7,15 @@ class MeViewController: BaseViewController,UITableViewDelegate,UITableViewDataSo
 
     var _topBgView:UIView!
     
-    let _titleArr = ["我的主页",
-                     "消息",
+    let _titleArr = [
+                    "我的帖子",
                      "收藏",
-                     "粉丝关注",
                      "分享给好友",
-                     //"意见反馈",
                      "设置"]
-    let _imgArr = ["uc_account",
-                   "uc_message",
-                   /*"uc_danzi",*/
+    let _imgArr = [
+                "uc_account",
                 "uc_shouc",
                 "uc_app",
-                "uc_zhaop",
-                //"uc_feedback",
                 "uc_system"]
 
     override func viewDidLoad() {
@@ -262,28 +250,15 @@ class MeViewController: BaseViewController,UITableViewDelegate,UITableViewDataSo
                 if let uid = User.uid() {
                     (vc as! MeHomePageController).uid = uid;
                 }
-                //vc = MeHomePageControllerNew()
                 break
             case 1:
-                vc = MessageViewController()
-                break
-            case 2:
                 vc = MeCollectController()
                 break
-            case 3:
-                vc = FensiBaseController()
-                break
-                
-            case 4://分享
+            case 2://分享
                 _share2()
                 //vc = HistoryViewController()
                 return
-            /*case 5:
-                vc =  UIStoryboard (name: "me", bundle: nil).instantiateViewController(withIdentifier: "feedback_id");
-                
-                break*/
-                
-            case 5://设置
+            case 3://设置
                 vc =  UIStoryboard (name: "me", bundle: nil).instantiateViewController(withIdentifier: "me_setter_sbid");
                 break
             default:break
@@ -324,10 +299,10 @@ class MeViewController: BaseViewController,UITableViewDelegate,UITableViewDataSo
             
             // 1.创建分享参数
             let shareParames = NSMutableDictionary()
-            shareParames.ssdkSetupShareParams(byText: "专注老家生活信息服务，关注分享家乡身边新动态，赶快告诉身边的小伙伴吧!",
+            shareParames.ssdkSetupShareParams(byText: "",
                                               images : UIImage(named: "app_logo"),
                                               url : URL.init(string: "http://dancheng0394.com/a/d/downloadapk.html"),
-                                              title : "咱郸城人自己的APP",
+                                              title : "",
                                               type : SSDKContentType.auto)
 
             let platType = [SSDKPlatformType.subTypeWechatTimeline , SSDKPlatformType.subTypeWechatSession , SSDKPlatformType.subTypeQQFriend,SSDKPlatformType.subTypeQZone]
@@ -336,17 +311,17 @@ class MeViewController: BaseViewController,UITableViewDelegate,UITableViewDataSo
             ShareSDK.share(platType[index - 1], parameters: shareParames) {[weak self] (state : SSDKResponseState, nil, entity : SSDKContentEntity?, error :Error?) in
     
                 switch state{
-                    case SSDKResponseState.success:
-                        HUD.showText("分享成功", view: UIApplication.shared.keyWindow!)
-                        guard let ss = self else {return}
-                        
-                        guard User.isLogined() else {
-                            HUD.showText("感谢您的分享", view: UIApplication.shared.keyWindow!)
-                            return
-                        }
-                        
-                        ///登录添加积分
-                        ss.updateScore()
+//                    case SSDKResponseState.success:
+//                        HUD.showText("分享成功", view: UIApplication.shared.keyWindow!)
+//                        guard let ss = self else {return}
+//
+//                        guard User.isLogined() else {
+//                            HUD.showText("感谢您的分享", view: UIApplication.shared.keyWindow!)
+//                            return
+//                        }
+//
+//                        ///登录添加积分
+//                        ss.updateScore()
                     case SSDKResponseState.fail:
                         HUD.showText("授权失败", view: UIApplication.shared.keyWindow!)
                     

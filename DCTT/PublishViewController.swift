@@ -1,10 +1,3 @@
-//
-//  PublishViewController.swift
-//  DCTT
-//  发布动态
-//  Created by wyg on 2017/11/11.
-//  Copyright © 2017年 Light.W. All rights reserved.
-//
 
 import UIKit
 import Photos
@@ -34,16 +27,7 @@ class PublishViewController: BasePublishController,ShowAlertControllerAble {
             HUD.show(successInfo: "发布成功!");
             guard let ss = self else {return}
             print(res)
-            
-            let vc = UIAlertController.init(title: "发布成功",message: "感谢你的参与，系统24小时内进行审核通过后才会显示", preferredStyle: .alert);
-            let action2 = UIAlertAction.init(title: "我知道了", style: .default) { (action) in
-                NotificationCenter.default.post(name: kHasPublishedSuccessNotification, object: nil, userInfo: ["type":ss.typeId!])
-                
-                ss.dismiss(animated: true, completion: nil)
-            }
-            
-            vc.addAction(action2)
-            ss.navigationController?.present(vc, animated: true, completion: nil);
+            ss.dismiss(animated: true, completion: nil)
         }) {
             print("upload faile");
         }

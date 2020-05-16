@@ -1,10 +1,4 @@
-//
-//  User.swift
-//  DCTT
-//
-//  Created by gener on 2018/8/2.
-//  Copyright © 2018年 Light.W. All rights reserved.
-//
+
 
 import Foundation
 

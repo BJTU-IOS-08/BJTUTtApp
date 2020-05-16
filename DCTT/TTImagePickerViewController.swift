@@ -1,10 +1,3 @@
-//
-//  TTImagePickerViewController.swift
-//  DCTT
-//
-//  Created by gener on 2017/12/7.
-//  Copyright © 2017年 Light.W. All rights reserved.
-//
 
 import UIKit
 import Photos
@@ -118,27 +111,30 @@ class TTImagePickerViewController: BaseViewController ,UICollectionViewDelegate,
     func addBottomBar() -> (preview:UIButton,finished:UIButton) {
         //bottomBar
         let _bottomBar = UIToolbar.init(frame: CGRect (x: 0, y: kCurrentScreenHeight - kBottomBarHeight, width: kCurrentScreenWidth, height: kBottomBarHeight))
+        _bottomBar.isUserInteractionEnabled = true
+        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(onFinished))
+        tapGesture.numberOfTapsRequired = 1
+        _bottomBar.addGestureRecognizer(tapGesture)
         _bottomBar.barStyle = .default
         _bottomBar.isTranslucent = true
         _bottomBar.setShadowImage(UIImage(), forToolbarPosition: .bottom)
         view.addSubview(_bottomBar)
         
         let previewbtn = UIButton (frame: CGRect (x: kCurrentScreenWidth - 50, y: 0, width: 40, height: 40))
-        previewbtn.addTarget(self, action: #selector(previewBtnAction(_:)), for: .touchUpInside)
-        previewbtn.setTitle("预览", for: .normal)
-        previewbtn.setTitleColor(_barBtnColor.disable, for: .normal)
-        previewbtn.isEnabled  = false
-        previewbtn.titleLabel?.font = UIFont.systemFont(ofSize: 15)
-        _bottomBar.addSubview(previewbtn)
+//        previewbtn.addTarget(self, action: #selector(previewBtnAction(_:)), for: .touchUpInside)
+//        previewbtn.setTitle("预览", for: .normal)
+//        previewbtn.setTitleColor(_barBtnColor.disable, for: .normal)
+//        previewbtn.titleLabel?.font = UIFont.systemFont(ofSize: 15)
+//        _bottomBar.addSubview(previewbtn)
         
+//        let lable = UILabel()
+//        lable.text = "完成"
+//        lable.addTarget
         let okbutton = UIButton (frame: CGRect (x: 0, y: 0, width: 60, height: 40))
         _bottomBar.addSubview(okbutton)
         okbutton.setTitle("完成", for: .normal)
         okbutton.titleLabel?.font = UIFont.systemFont(ofSize: 15)
         okbutton.setTitleColor(_barBtnColor.disable, for: .normal)
-        okbutton.isEnabled = false
-        okbutton.addTarget(self, action: #selector(finished), for: .touchUpInside)
-        
         return (previewbtn,okbutton)
     }
     
@@ -146,7 +142,7 @@ class TTImagePickerViewController: BaseViewController ,UICollectionViewDelegate,
         showPreviewController(0)
     }
     
-    @objc func finished()  {
+    @objc func onFinished()  {
         if let handler = imageSelectedCompletionHandler {
             handler(hasSelectedImageAsset)
         }
@@ -180,12 +176,15 @@ class TTImagePickerViewController: BaseViewController ,UICollectionViewDelegate,
     func setStatus()  {
         let bool = hasSelectedImageAsset.count > 0
         preViewBtn.setTitleColor(bool ? _barBtnColor.enbale : _barBtnColor.disable, for: .normal)
-        preViewBtn.isEnabled = bool
+//        preViewBtn.isEnabled = bool
         finishedBtn.setTitleColor(bool ? _barBtnColor.enbale : _barBtnColor.disable, for: .normal)
-        finishedBtn.isEnabled = bool
+//        finishedBtn.isEnabled = bool
         
         hasSelectNumber.isHidden = !bool
         hasSelectNumber.text = "\(hasSelectedImageAsset.count)"
+//        if(bool) {
+//            onFinished()
+//        }
     }
     
     

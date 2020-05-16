@@ -1,10 +1,3 @@
-//
-//  FriendRootController.swift
-//  DCTT
-//
-//  Created by wyg on 2018/8/12.
-//  Copyright © 2018年 Light.W. All rights reserved.
-//
 
 import UIKit
 import SwiftTTPageController

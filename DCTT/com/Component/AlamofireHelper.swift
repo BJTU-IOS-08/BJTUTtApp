@@ -1,10 +1,4 @@
-//
-//  AlamofireHelper.swift
-//  DCTT
-//
-//  Created by wyg on 2018/7/22.
-//  Copyright © 2018年 Light.W. All rights reserved.
-//
+
 
 import UIKit
 import Alamofire

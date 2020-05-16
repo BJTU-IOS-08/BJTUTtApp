@@ -1,10 +1,3 @@
-//
-//  MeHomeHeadView.swift
-//  DCTT
-//
-//  Created by wyg on 2018/3/18.
-//  Copyright © 2018年 Light.W. All rights reserved.
-//
 
 import UIKit
 
@@ -124,7 +117,7 @@ class MeHomeHeadView: UIView {
         
         praise.text = String.isNullOrEmpty(dic["zanCnt"])
         fans.text = String.isNullOrEmpty(dic["fanCnt"])
-        score.text = String.isNullOrEmpty(dic["score"])
+//        score.text = String.isNullOrEmpty(dic["score"])
         
         ///watch
         author_id = String.isNullOrEmpty(dic["user_id"])

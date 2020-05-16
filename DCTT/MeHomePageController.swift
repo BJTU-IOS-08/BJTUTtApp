@@ -1,10 +1,3 @@
-//
-//  MeHomePageController.swift
-//  DCTT
-//
-//  Created by wyg on 2018/3/17.
-//  Copyright © 2018年 Light.W. All rights reserved.
-//
 
 import UIKit
 let _kTableViewHeaderHeight : CGFloat = 220//350

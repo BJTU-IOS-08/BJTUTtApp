@@ -1,10 +1,3 @@
-//
-//  HomerListViewController.swift
-//  DCTT
-//
-//  Created by wyg on 2017/12/21.
-//  Copyright © 2017年 Light.W. All rights reserved.
-//
 
 import UIKit
 import MJRefresh
@@ -17,7 +10,7 @@ class HomerListViewController: BaseTableViewController {
     private var _category:String!
     private var loadDataSuccess:Bool = false
     
-    ///type:小分类 , category:大分类 sy-首页 life-生活服务
+        
     init(_ type:String , category:String = "sy") {
         super.init(nibName: nil, bundle: nil)
         

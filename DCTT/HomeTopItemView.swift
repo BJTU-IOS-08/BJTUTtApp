@@ -1,10 +1,3 @@
-//
-//  HomeTopItemView.swift
-//  DCTT
-//
-//  Created by wyg on 2019/1/29.
-//  Copyright © 2019年 Light.W. All rights reserved.
-//
 
 import UIKit
 

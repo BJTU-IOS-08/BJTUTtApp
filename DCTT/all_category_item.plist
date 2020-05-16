@@ -5,7 +5,7 @@
 	<array>
 		<dict>
 			<key>item_title</key>
-			<string>新鲜事</string>
+			<string>最新</string>
 			<key>item_id</key>
 			<string>id001</string>
 			<key>item_key</key>
@@ -13,7 +13,7 @@
 		</dict>
 		<dict>
 			<key>item_title</key>
-			<string>打听</string>
+			<string>热门</string>
 			<key>item_id</key>
 			<string>id001</string>
 			<key>item_key</key>
@@ -21,7 +21,7 @@
 		</dict>
 		<dict>
 			<key>item_title</key>
-			<string>吐槽</string>
+			<string>校园</string>
 			<key>item_id</key>
 			<string>id001</string>
 			<key>item_key</key>
@@ -29,7 +29,7 @@
 		</dict>
 		<dict>
 			<key>item_title</key>
-			<string>公告</string>
+			<string>吐槽</string>
 			<key>item_id</key>
 			<string>id001</string>
 			<key>item_key</key>

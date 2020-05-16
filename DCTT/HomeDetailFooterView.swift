@@ -1,10 +1,3 @@
-//
-//  HomeDetailFooterView.swift
-//  DCTT
-//
-//  Created by wyg on 2018/1/25.
-//  Copyright © 2018年 Light.W. All rights reserved.
-//
 
 import UIKit
 
@@ -16,6 +9,7 @@ class HomeDetailFooterView: UIView {
     @IBOutlet weak var jubaoBtn: UIButton!
     var _d:[String:Any]?
     var category:String!
+    var currParaiseCnt = 0
     
     @IBAction func jubaoAction(_ sender: Any) {
 //        Tools.showMsg("发布的虚假信息或违法内容,举报该用户?", title: "举报") { () in
@@ -42,10 +36,10 @@ class HomeDetailFooterView: UIView {
         zanBtn.layer.borderWidth = 0.5
         zanBtn.layer.borderColor = UIColor.lightGray.cgColor
         
-        jubaoBtn.layer.borderWidth = 1
-        jubaoBtn.layer.borderColor = kTableviewBackgroundColor.cgColor
-        jubaoBtn.layer.cornerRadius = 10
-        jubaoBtn.layer.masksToBounds = true
+//        jubaoBtn.layer.borderWidth = 1
+//        jubaoBtn.layer.borderColor = kTableviewBackgroundColor.cgColor
+//        jubaoBtn.layer.cornerRadius = 10
+//        jubaoBtn.layer.masksToBounds = true
     }
     
     @IBAction func zanBtnAction(_ sender: UIButton) {
@@ -72,6 +66,8 @@ class HomeDetailFooterView: UIView {
             ///+1 不能取消点赞
             
             ss.zanBtn.isSelected = true
+            ss.currParaiseCnt  = ss.currParaiseCnt + 1
+            ss.zanBtn.setTitle("\(ss.currParaiseCnt)", for: .normal)
             HUD.show(successInfo: "点赞成功")
         }) { (error) in
            HUD.show(info: error?.localizedDescription ?? "点赞失败,请稍后重试")
@@ -90,7 +86,8 @@ class HomeDetailFooterView: UIView {
             readCnt.text = "\(cnt)";
         }
         
-        if let cnt = Int(String.isNullOrEmpty(d["praiseCnt"]))  , cnt > 0 {
+        if var cnt = Int(String.isNullOrEmpty(d["praiseCnt"]))  , cnt > 0 {
+            currParaiseCnt = cnt
             zanBtn.setTitle("\(cnt)", for: .normal)
             
             //是否已赞

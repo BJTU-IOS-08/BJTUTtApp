@@ -1,10 +1,4 @@
-//
-//  PublishFriendViewController.swift
-//  DCTT
-//  发布朋友圈
-//  Created by wyg on 2018/2/3.
-//  Copyright © 2018年 Light.W. All rights reserved.
-//
+
 
 import UIKit
 import Photos

@@ -1,10 +1,3 @@
-//
-//  ZTDetailCell.swift
-//  DCTT
-//
-//  Created by wyg on 2018/9/19.
-//  Copyright © 2018年 Light.W. All rights reserved.
-//
 
 import UIKit
 

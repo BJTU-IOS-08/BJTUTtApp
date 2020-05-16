@@ -8,8 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		1CA80F2AEDAEB16E4EC071EF /* Pods_DCTT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC2D79CD06F43F25725B0AC5 /* Pods_DCTT.framework */; };
-		9C36BCAB246D75C0003ABEA5 /* launchimg.png in Resources */ = {isa = PBXBuildFile; fileRef = 9C36BCAA246D75C0003ABEA5 /* launchimg.png */; };
-		9C36BCAD246D75FF003ABEA5 /* app1.png in Resources */ = {isa = PBXBuildFile; fileRef = 9C36BCAC246D75FE003ABEA5 /* app1.png */; };
 		A1026C251FDE1EAA002DE354 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1026C241FDE1EAA002DE354 /* CoreLocation.framework */; };
 		A10CB8EB1FE0FD340043391D /* TTImagePreviewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10CB8EA1FE0FD340043391D /* TTImagePreviewCell.swift */; };
 		A117530B1FC7B0DF00888516 /* AnimationContoller.m in Sources */ = {isa = PBXBuildFile; fileRef = A11753081FC7B0DF00888516 /* AnimationContoller.m */; };
@@ -152,7 +150,7 @@
 		AD2FC96B22017E94004DA297 /* LifeListViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AD2FC96922017E94004DA297 /* LifeListViewCell.xib */; };
 		AD312DBA2150C9E700034273 /* DetailViewM.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD312DB92150C9E700034273 /* DetailViewM.swift */; };
 		AD312DBC215101C600034273 /* ServerDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD312DBB215101C600034273 /* ServerDetailController.swift */; };
-		AD321F9C22E99D230053DEC4 /* 600x153.png in Resources */ = {isa = PBXBuildFile; fileRef = AD321F9822E99D230053DEC4 /* 600x153.png */; };
+		AD321F9C22E99D230053DEC4 /* 600x1531.png in Resources */ = {isa = PBXBuildFile; fileRef = AD321F9822E99D230053DEC4 /* 600x1531.png */; };
 		AD321F9D22E99D230053DEC4 /* 633x120.png in Resources */ = {isa = PBXBuildFile; fileRef = AD321F9922E99D230053DEC4 /* 633x120.png */; };
 		AD321F9E22E99D230053DEC4 /* 3057x760.png in Resources */ = {isa = PBXBuildFile; fileRef = AD321F9A22E99D230053DEC4 /* 3057x760.png */; };
 		AD321F9F22E99D230053DEC4 /* 633x120_w.png in Resources */ = {isa = PBXBuildFile; fileRef = AD321F9B22E99D230053DEC4 /* 633x120_w.png */; };
@@ -228,13 +226,12 @@
 		ADFC9E062053F73D00449767 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADFC9E052053F73D00449767 /* RegisterViewController.swift */; };
 		ADFC9E082053F75B00449767 /* FindPwdController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADFC9E072053F75B00449767 /* FindPwdController.swift */; };
 		ADFC9E0A2053F7D400449767 /* UserAgreementController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADFC9E092053F7D400449767 /* UserAgreementController.swift */; };
+		D43EE0C5246E556100E36DFB /* 600x153.png in Resources */ = {isa = PBXBuildFile; fileRef = D43EE0C4246E556100E36DFB /* 600x153.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		55B69D6DCD87607BEB534DEA /* Pods-DCTT.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DCTT.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DCTT/Pods-DCTT.debug.xcconfig"; sourceTree = "<group>"; };
 		604BC239A7045558390DF0BE /* Pods-DCTT.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DCTT.release.xcconfig"; path = "Pods/Target Support Files/Pods-DCTT/Pods-DCTT.release.xcconfig"; sourceTree = "<group>"; };
-		9C36BCAA246D75C0003ABEA5 /* launchimg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = launchimg.png; path = ../../../../Downloads/launchimg.png; sourceTree = "<group>"; };
-		9C36BCAC246D75FE003ABEA5 /* app1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = app1.png; path = ../../../../Downloads/app1.png; sourceTree = "<group>"; };
 		A1026C241FDE1EAA002DE354 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		A10CB8EA1FE0FD340043391D /* TTImagePreviewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TTImagePreviewCell.swift; sourceTree = "<group>"; };
 		A11753071FC7B0DF00888516 /* AnimationContoller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnimationContoller.h; sourceTree = "<group>"; };
@@ -384,7 +381,7 @@
 		AD2FC96922017E94004DA297 /* LifeListViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LifeListViewCell.xib; sourceTree = "<group>"; };
 		AD312DB92150C9E700034273 /* DetailViewM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewM.swift; sourceTree = "<group>"; };
 		AD312DBB215101C600034273 /* ServerDetailController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerDetailController.swift; sourceTree = "<group>"; };
-		AD321F9822E99D230053DEC4 /* 600x153.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 600x153.png; sourceTree = "<group>"; };
+		AD321F9822E99D230053DEC4 /* 600x1531.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 600x1531.png; sourceTree = "<group>"; };
 		AD321F9922E99D230053DEC4 /* 633x120.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 633x120.png; sourceTree = "<group>"; };
 		AD321F9A22E99D230053DEC4 /* 3057x760.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 3057x760.png; sourceTree = "<group>"; };
 		AD321F9B22E99D230053DEC4 /* 633x120_w.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 633x120_w.png; sourceTree = "<group>"; };
@@ -462,6 +459,7 @@
 		ADFC9E052053F73D00449767 /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		ADFC9E072053F75B00449767 /* FindPwdController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FindPwdController.swift; sourceTree = "<group>"; };
 		ADFC9E092053F7D400449767 /* UserAgreementController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserAgreementController.swift; sourceTree = "<group>"; };
+		D43EE0C4246E556100E36DFB /* 600x153.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 600x153.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -868,9 +866,8 @@
 		AD321F9722E99CA00053DEC4 /* app_logo */ = {
 			isa = PBXGroup;
 			children = (
-				9C36BCAA246D75C0003ABEA5 /* launchimg.png */,
-				9C36BCAC246D75FE003ABEA5 /* app1.png */,
-				AD321F9822E99D230053DEC4 /* 600x153.png */,
+				D43EE0C4246E556100E36DFB /* 600x153.png */,
+				AD321F9822E99D230053DEC4 /* 600x1531.png */,
 				AD321FA622E9B49C0053DEC4 /* app_logo@2x.png */,
 				AD321FA522E9B49C0053DEC4 /* app_logo@3x.png */,
 				AD321FA322E99E500053DEC4 /* 1080x1882.png */,
@@ -1039,7 +1036,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				A1E61D211FCE93E30080A12D /* MePersonInfoCell.xib in Resources */,
-				9C36BCAD246D75FF003ABEA5 /* app1.png in Resources */,
 				AD21DF6620275A8B002FE181 /* TableViewCellSwitch.xib in Resources */,
 				AD6A983C201A12CB00E7C5AE /* HomeDetailFooterView.xib in Resources */,
 				AD20F3C82067DEA4003BDE17 /* MessageCell.xib in Resources */,
@@ -1066,6 +1062,7 @@
 				AD321F9D22E99D230053DEC4 /* 633x120.png in Resources */,
 				AD34498C217E23A60086F5F5 /* TodayViewCell.xib in Resources */,
 				A189DEFE1FCFABCD007911D2 /* area.plist in Resources */,
+				D43EE0C5246E556100E36DFB /* 600x153.png in Resources */,
 				AD2178E0207FB1B700B99069 /* FensiCell.xib in Resources */,
 				AD0BD504200A34350088D5E7 /* FriendHeadView.xib in Resources */,
 				A148A2A61FD649570052DDF3 /* publish_write@2x.png in Resources */,
@@ -1091,8 +1088,7 @@
 				AD321FA822E9B49C0053DEC4 /* app_logo@2x.png in Resources */,
 				AD0FAFA120444C0A008A386E /* CategoryItemsCell.xib in Resources */,
 				ADC8EBEC21513C74008E5696 /* JiaoyouCell.xib in Resources */,
-				AD321F9C22E99D230053DEC4 /* 600x153.png in Resources */,
-				9C36BCAB246D75C0003ABEA5 /* launchimg.png in Resources */,
+				AD321F9C22E99D230053DEC4 /* 600x1531.png in Resources */,
 				A148A2A81FD658180052DDF3 /* video_allshare@2x.png in Resources */,
 				A148A2A41FD6494B0052DDF3 /* publish_image@2x.png in Resources */,
 				A1CE839F1FC40D3D00DAF90F /* FriendsCollectonViewCell.xib in Resources */,

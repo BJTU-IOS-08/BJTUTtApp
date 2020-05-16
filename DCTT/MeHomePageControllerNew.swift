@@ -1,10 +1,3 @@
-//
-//  MeHomePageControllerNew.swift
-//  DCTT
-//
-//  Created by wyg on 2019/2/18.
-//  Copyright © 2019年 Light.W. All rights reserved.
-//  deprecated
 
 import UIKit
 

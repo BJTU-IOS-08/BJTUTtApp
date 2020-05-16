@@ -1,10 +1,3 @@
-//
-//  FriendsDetailController.swift
-//  DCTT
-//
-//  Created by gener on 17/11/21.
-//  Copyright © 2017年 Light.W. All rights reserved.
-//废弃
 
 import UIKit
 

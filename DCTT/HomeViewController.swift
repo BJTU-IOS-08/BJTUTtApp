@@ -1,10 +1,3 @@
-//
-//  HomeViewController.swift
-//  DCTT
-//
-//  Created by wyg on 2017/11/11.
-//  Copyright © 2017年 Light.W. All rights reserved.
-//
 
 import UIKit
 import RxSwift
@@ -14,7 +7,7 @@ class HomeViewController: BaseViewController ,TTPageViewControllerDelegate,TTHea
     var vcArr = [BaseTableViewController]()
     var pagevc :TTPageViewController!
     var topview : TTHeadView!
-    let _logo_title = "郸城头条"
+    let _logo_title = "无忧论坛"
     
     override var preferredStatusBarStyle: UIStatusBarStyle {
         get{
@@ -59,16 +52,12 @@ class HomeViewController: BaseViewController ,TTPageViewControllerDelegate,TTHea
     
     func _init() {
         //head
-        let titles = ["最新","热门",
-//                      "新鲜事",
-                      "打听","吐槽","公告"]
+        let titles = ["最新","热门", "校园", "吐槽"]
         let titlesId = [
             "最新":"0",
             "热门":"1",
-//            "新鲜事":"10",
-            "打听":"11",
-            "吐槽":"12",
-            "公告":"13",
+            "校园" : "2",
+            "吐槽": "3"
         ]
         
         let _w :CGFloat = 50.0 * CGFloat(titles.count) < kCurrentScreenWidth ? 55 : 50
@@ -108,28 +97,6 @@ class HomeViewController: BaseViewController ,TTPageViewControllerDelegate,TTHea
         logo_lable.font = UIFont.systemFont(ofSize: 17)
         logo_lable.textColor = UIColorFromHex(rgbValue: 0xdcdcdc);
         logo_lable.textAlignment = .center
-//        navigationItem.titleView = logo_lable;
-        
-        /*
-        let left_item = UIBarButtonItem.init(customView: logo_lable)
-        //navigationItem.leftBarButtonItem = left_item
-        
-        //search
-        let tf = UITextField (frame: CGRect (x: 0, y: 0, width: kCurrentScreenWidth - 150, height: 30))
-        tf.backgroundColor = UIColor.white
-        tf.borderStyle = .roundedRect
-        tf.text = "请输入搜索关键字"
-        tf.textColor = UIColor.darkGray
-        tf.font = UIFont .systemFont(ofSize: 14)
-        tf.delegate = self
-        tf.leftViewMode = .always
-        let leftview = UIView (frame: CGRect (x: 0, y: 0, width: 25, height: 20))
-        let img = UIImageView (image: UIImage (named: "search_subscibe_titilebar_press_night"))
-        img.frame = CGRect (x: 10, y: 4, width: 12, height: 12)
-        leftview.addSubview(img)
-        tf.leftView = leftview
-        
-        //navigationItem.titleView = logo_lable*/
     }
     
     
@@ -156,16 +123,4 @@ class HomeViewController: BaseViewController ,TTPageViewControllerDelegate,TTHea
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }

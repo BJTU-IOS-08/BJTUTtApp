@@ -1,10 +1,3 @@
-//
-//  AppDelegate.swift
-//  DCTT
-//
-//  Created by wyg on 2017/11/11.
-//  Copyright © 2017年 Light.W. All rights reserved.
-//
 
 import UIKit
 //import CoreLocation

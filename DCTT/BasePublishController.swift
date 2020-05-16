@@ -1,10 +1,3 @@
-//
-//  BasePublishController.swift
-//  DCTT
-//
-//  Created by wyg on 2018/2/3.
-//  Copyright © 2018年 Light.W. All rights reserved.
-//
 
 import UIKit
 import Photos
@@ -191,7 +184,7 @@ class BasePublishController: BaseViewController,UICollectionViewDelegate,UIColle
     func _showTTImagePickerViewController()  {
         let vc = TTImagePickerViewController()
         //最大选择的数
-        vc.maxImagesNumber = kMaxImagesNumber - imgDataArr.count
+        vc.maxImagesNumber = 1
         
         vc.imageSelectedCompletionHandler = {[weak self]  images in
             guard let strongSelf = self else {

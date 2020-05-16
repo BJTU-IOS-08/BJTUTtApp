@@ -1,10 +1,3 @@
-//
-//  PubSelectTypeController.swift
-//  DCTT
-//
-//  Created by wyg on 2018/2/1.
-//  Copyright © 2018年 Light.W. All rights reserved.
-//
 
 import UIKit
 
@@ -20,7 +13,7 @@ class PubSelectTypeController: BaseViewController ,UICollectionViewDelegate,UICo
     @IBOutlet weak var collectionview: UICollectionView!
    
     var dataArray = [[[String:String]]]()
-    let _head_section_titles = ["新动态","生活服务"]
+    let _head_section_titles = ["新动态"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -163,21 +156,23 @@ class PubSelectTypeController: BaseViewController ,UICollectionViewDelegate,UICo
     
     
     func _showAlert(_ indexPath: IndexPath) {
-        let _v = UIAlertController.init(title: "提示", message: "请发布真实有效信息，否则审核无法通过。", preferredStyle: .alert);
-        let action1 = UIAlertAction.init(title: "知道了", style: .default) {[weak self] (action)  in
-            guard let ss = self else {return}
-            ss._toPublish(indexPath);
-        }
-        let action2 = UIAlertAction.init(title: "发布须知", style: .default) {[weak self] (action)  in
-            guard let ss = self else {return}
-            let vc = BaseWebViewController(baseUrl:publish_note_url)
-            vc.title = "发布须知"
-            ss.navigationController?.pushViewController(vc, animated: true);
-        }
-        
-        _v.addAction(action1);
-        _v.addAction(action2);
-        self.navigationController?.present(_v, animated: true, completion: nil);
+//        let _v = UIAlertController.init(title: "提示", message: "请发布真实有效信息，否则审核无法通过。", preferredStyle: .alert);
+//        let action1 = UIAlertAction.init(title: "知道了", style: .default) {[weak self] (action)  in
+//            guard let ss = self else {return}
+//            ss._toPublish(indexPath);
+//        }
+//        let action2 = UIAlertAction.init(title: "发布须知", style: .default) {[weak self] (action)  in
+//            guard let ss = self else {return}
+//            let vc = BaseWebViewController(baseUrl:publish_note_url)
+//            vc.title = "发布须知"
+//            ss.navigationController?.pushViewController(vc, animated: true);
+//        }
+//
+//        _v.addAction(action1);
+//        _v.addAction(action2);
+        let ss = self
+        ss._toPublish(indexPath);
+//        self.navigationController?.present(_v, animated: true, completion: nil);
     }
     
     func _toPublish(_ indexPath: IndexPath) {

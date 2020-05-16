@@ -1,10 +1,3 @@
-//
-//  MessageCell.swift
-//  DCTT
-//
-//  Created by wyg on 2018/3/25.
-//  Copyright © 2018年 Light.W. All rights reserved.
-//
 
 import UIKit
 import SwiftyJSON

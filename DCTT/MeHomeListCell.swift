@@ -1,10 +1,3 @@
-//
-//  MeHomeListCell.swift
-//  DCTT
-//
-//  Created by wyg on 2019/2/11.
-//  Copyright © 2019年 Light.W. All rights reserved.
-//主页、收藏列表cell
 
 import UIKit
 

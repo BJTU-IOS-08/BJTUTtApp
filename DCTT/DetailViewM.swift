@@ -1,10 +1,3 @@
-//
-//  DetailViewM.swift
-//  DCTT
-//
-//  Created by wyg on 2018/9/18.
-//  Copyright © 2018年 Light.W. All rights reserved.
-//
 import UIKit
 import IQKeyboardManagerSwift
 
@@ -158,12 +151,12 @@ class DetailViewM: NSObject {
 
         switch button.tag {
         case 100://写评论
-//            IQKeyboardManager.sharedManager().enable = false
-//            IQKeyboardManager.sharedManager().enableAutoToolbar = false
+//            IQKeyboardManager.enable = false
+//            IQKeyboardManager.enableAutoToolbar = false
             let post_v = TTPostCommentView.init(frame:UIScreen.main.bounds)
             post_v.pid = pid
             post_v.category = category
-            
+                   
             UIApplication.shared.keyWindow?.addSubview(post_v)
             break
         case 102://收藏

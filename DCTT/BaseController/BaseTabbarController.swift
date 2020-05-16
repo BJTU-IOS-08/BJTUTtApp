@@ -20,22 +20,22 @@ class BaseTabbarController: UITabBarController {
         
         let itemtitleArr = [
             "首页",
-            "话题",
             "",
-            "生活",
+            "发布",
+            "",
             "个人中心"]
 
         let icon_normal:Array = [
             "tabbar_icon_home",
-            "tabbar_icon_friend",
+            "",
             "tabbar_icon_publish" ,
-            "tabbar_icon_all",
+            "",
             "tabbar_icon_me" ]
         let icon_selected = [
             "tabbar_icon_home_selected",
-            "tabbar_icon_friend_selected",
+            "",
             "tabbar_icon_publish" ,
-            "tabbar_icon_all_selected",
+            "",
             "tabbar_icon_me_selected" ]
         
         let vcname = [

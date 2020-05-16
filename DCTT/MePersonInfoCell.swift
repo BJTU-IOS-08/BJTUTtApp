@@ -1,10 +1,3 @@
-//
-//  MePersonInfoCell.swift
-//  DCTT
-//
-//  Created by gener on 2017/11/29.
-//  Copyright © 2017年 Light.W. All rights reserved.
-//
 
 import UIKit
 
@@ -19,7 +12,7 @@ class MePersonInfoCell: UITableViewCell {
     
     @IBOutlet weak var praiseCnt: UILabel!
     @IBOutlet weak var fansCnt: UILabel!
-    @IBOutlet weak var score: UILabel!
+//    @IBOutlet weak var score: UILabel!
 
     var cellBtnClickedAction:(() -> Void)?
     
@@ -41,8 +34,8 @@ class MePersonInfoCell: UITableViewCell {
         }
 
         praiseCnt.text = String.isNullOrEmpty(dic["zanCnt"])
-        fansCnt.text = String.isNullOrEmpty(dic["fanCnt"])
-        score.text = String.isNullOrEmpty(dic["score"])
+        fansCnt.text = ""
+//        score.text = String.isNullOrEmpty(dic["score"])
     }
     
     override func awakeFromNib() {

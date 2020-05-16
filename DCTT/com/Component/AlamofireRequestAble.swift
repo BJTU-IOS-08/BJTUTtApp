@@ -1,10 +1,4 @@
-//
-//  AlamofireRequestAble.swift
-//  DCTT
-//
-//  Created by wyg on 2018/8/1.
-//  Copyright © 2018年 Light.W. All rights reserved.
-//
+
 
 import Foundation
 

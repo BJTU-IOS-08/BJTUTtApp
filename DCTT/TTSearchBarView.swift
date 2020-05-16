@@ -1,10 +1,3 @@
-//
-//  TTSearchBarView.swift
-//  DCTT
-//
-//  Created by gener on 17/11/28.
-//  Copyright © 2017年 Light.W. All rights reserved.
-//
 
 import UIKit
 
